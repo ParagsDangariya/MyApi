@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">MyApi</string>
 
-    <String name="link">https://api.myjson.com/bins/1g7osg%3C</String>
+    <string name="link">https://api.myjson.com/bins/1g7osg%3C</string>
 </resources>
