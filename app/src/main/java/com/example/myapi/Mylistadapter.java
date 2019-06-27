@@ -8,6 +8,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
 
 public class Mylistadapter extends BaseAdapter {
@@ -56,6 +58,8 @@ public class Mylistadapter extends BaseAdapter {
         TextView Pname = convertView.findViewById(R.id.txt_Pname);
 
 
+        Picasso.get().load(pro.get(position).getPimg()).into(img);
+        Pname.setText(pro.get(position).getPname());
 
         return null;
     }
