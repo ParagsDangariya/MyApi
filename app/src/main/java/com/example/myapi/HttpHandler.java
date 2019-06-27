@@ -16,7 +16,7 @@ public class HttpHandler {
     public HttpHandler(){
 
     }
-    public static String makeserviceCall(String rurl){
+    public  String makeserviceCall(String rurl){
 
 
        String response = null;
@@ -31,6 +31,8 @@ public class HttpHandler {
 
         //read response
         InputStream in =new BufferedInputStream(con.getInputStream());
+
+        response = convertStream(in);
 
     }catch (MalformedURLException e){
         Log.e("Httphandler class","Mail"+e.getMessage());
