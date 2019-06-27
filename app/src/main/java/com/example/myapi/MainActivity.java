@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
 
             String mysts = new Sycdata().execute(ls).get();
+            System.out.println("this main activity"+mysts);
         }catch (ExecutionException e)
         {
             Log.e("main class","Mail"+e.getMessage());
