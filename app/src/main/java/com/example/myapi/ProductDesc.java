@@ -29,6 +29,9 @@ public class ProductDesc extends AppCompatActivity {
 
         Picasso.get().load(P.getPimg()).into(img);
 
+       // System.out.println("hi"+name);
+
+        title.setText(P.Pname);
 
     }
 }
