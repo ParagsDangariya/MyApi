@@ -5,22 +5,26 @@
 
 
     <ImageView
+        android:id="@+id/img"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:id="@+id/img"/>
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp" />
 
     <TextView
         android:id="@+id/txt_Pname"
         android:layout_width="199dp"
         android:layout_height="82dp"
-        android:layout_alignStart="@+id/img"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="53dp"
-        android:layout_marginEnd="88dp"
-        android:layout_marginBottom="596dp"
+        android:layout_marginStart="19dp"
+
+        android:layout_marginEnd="-111dp"
+
+        android:layout_toEndOf="@+id/img"
         android:text="Hello"
-        android:textSize="60dp"/>
+        android:textSize="30dp" />
 </RelativeLayout>

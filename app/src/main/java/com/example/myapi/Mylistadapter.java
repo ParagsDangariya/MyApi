@@ -24,8 +24,8 @@ public class Mylistadapter extends BaseAdapter {
         this.pro = pro;
     }
 
-    public Mylistadapter() {
-    }
+//    public Mylistadapter() {
+//    }
 
 
 
@@ -61,6 +61,6 @@ public class Mylistadapter extends BaseAdapter {
         Picasso.get().load(pro.get(position).getPimg()).into(img);
         Pname.setText(pro.get(position).getPname());
 
-        return null;
+        return convertView;
     }
 }
