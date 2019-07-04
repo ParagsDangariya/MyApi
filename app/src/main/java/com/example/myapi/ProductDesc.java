@@ -33,5 +33,9 @@ public class ProductDesc extends AppCompatActivity {
 
         title.setText(P.Pname);
 
+        String des = P.desc;
+        description.setText(des);
+        price.setText((int) P.price);
+        brand.setText(P.brand);
     }
 }
