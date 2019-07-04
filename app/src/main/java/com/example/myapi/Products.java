@@ -1,6 +1,6 @@
 package com.example.myapi;
 
-public class Products {
+public class Products  {
 
     String pimg,Pname,brand,desc;
     long price;
