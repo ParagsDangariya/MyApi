@@ -29,13 +29,14 @@ public class ProductDesc extends AppCompatActivity {
 
         Picasso.get().load(P.getPimg()).into(img);
 
-       // System.out.println("hi"+name);
+       System.out.println("hi"+name);
 
         title.setText(P.Pname);
 
-        String des = P.desc;
+
+        String des = P.getPname();
         description.setText(des);
-        price.setText((int) P.price);
-        brand.setText(P.brand);
+        price.setText((int) P.getPrice());
+        brand.setText(P.getBrand());
     }
 }
