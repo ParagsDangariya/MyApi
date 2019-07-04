@@ -1,9 +1,12 @@
 package com.example.myapi;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
 
 public class ProductDesc extends AppCompatActivity {
 
@@ -19,5 +22,13 @@ public class ProductDesc extends AppCompatActivity {
         title = findViewById(R.id.title);
         price = findViewById(R.id.price);
         brand = findViewById(R.id.brand);
+
+        Intent i = getIntent();
+        Products P = i.getParcelableExtra("data");
+        String name = P.getPname();
+
+        Picasso.get().load(P.getPimg()).into(img);
+
+
     }
 }

@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
 
                         Intent i =new Intent(MainActivity.this,ProductDesc.class);
 
-                        i.putExtra("mydata",pro.get(position));
+                        i.putExtra("data",pro.get(position));
                         startActivity(i);
                     }
                 });
