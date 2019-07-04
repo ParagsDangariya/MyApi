@@ -23,9 +23,9 @@ public class HttpHandler {
 
     try {
 
-        URL url1 = new URL(rurl);
+        URL url = new URL(rurl);
 
-        HttpURLConnection con = (HttpURLConnection) url1.openConnection();
+        HttpURLConnection con = (HttpURLConnection) url.openConnection();
         con.setRequestMethod("GET");
         con.setRequestProperty("Content-Type","application/json");
 
