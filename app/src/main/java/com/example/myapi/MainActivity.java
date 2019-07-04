@@ -3,7 +3,10 @@ package com.example.myapi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -28,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         String ls  = getResources().getString(R.string.link);
 
-        ArrayList<Products> pro = new ArrayList<>();
+        final ArrayList<Products> pro = new ArrayList<>();
 
         try {
 
@@ -58,6 +61,14 @@ public class MainActivity extends AppCompatActivity {
                 adapt = new Mylistadapter(MainActivity.this,pro);
 
                 lsp.setAdapter(adapt);
+
+                lsp.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                        Toast.makeText(getApplicationContext(),pro.get(position).getPname(),Toast.LENGTH_LONG).show();
+
+                    }
+                });
             }
 
         }catch (ExecutionException e)
